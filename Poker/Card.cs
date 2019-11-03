@@ -58,7 +58,7 @@ namespace Poker
                         '♠' => Suit.Spades,
                         _ => throw new ArgumentException("Could not understand suit symbol.", nameof(input)),
                     }),
-                _ => throw new ArgumentException("Input was longer than expected.", nameof(input)),
+                _ => throw new ArgumentException("Could not understand input.", nameof(input)),
             };
         }
     }
